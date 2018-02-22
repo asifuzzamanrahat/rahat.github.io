@@ -1,0 +1,102 @@
+.hero-area{
+    background-image: url(img/hero.jpg);
+    background-color: #359af3;
+    background-position: center;
+    line-height: 1.8; 
+    margin-bottom: 150px;
+}
+.hero-form{
+    background: #fff;
+    padding: 30px;
+    color: #333;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    margin-top: -50px;
+}
+.hero-form:after{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: #fff;
+    border-radius: 5px;
+    z-index: -1;
+    opacity: .2;
+}
+.hero-left-area {
+    margin-top: 90px;
+}
+.boxed-btn{
+    background-color: #06d6a0;
+}
+input[type="submit"], button[type="submit"]{
+    background-color: #06d6a0;
+}
+.hero-left-area p{
+    color: white;
+    font-size: 15px;
+}
+.hero-area h1{
+    color: white;
+    font-size: 45px;
+}
+input[type="text"] {
+    padding: 15px;
+    width: 100%;
+}
+input[type="email"] {
+    padding: 15px;
+    width: 100%;
+}
+input[type="url"] {
+    padding: 15px;
+    width: 100%;
+}
+i.fa.fa-star {
+    margin-top: 90px;
+    margin-bottom:  35px;
+}
+.know-area h3{
+    font-size: 22px;
+    text-align: left;
+}
+.know-area p{
+    font-size: 15px;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.know-area a{
+    float: left;
+}
+.single-service-box-2{
+    background: #fbfbfb;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 250px;
+}
+.service-icon{
+    color: #289ef8;
+    font-size: 30px;
+}
+.service-box-tablecell h3{
+    font-size: 22px;
+}
+.single-service-box-2:hover{
+background: #22bffb;
+background: -moz-linear-gradient(top , #22bffb 0%,#4783e8 100%);
+background: -webkit-linear-gradient(top , #22bffb 0%,#4783e8 100%);
+background: linear-gradient(to bottom ,#22bffb 0%,#4783e8 100%);
+filter: progig:DXImageTransform.Microsoft.gradient(startColorstr='#22bffb'endColorstr='#4783e8'GradientType=0);
+}
+.single-service-box-2:hover i.fa.fa-star{
+    color: #fff;
+}
+.single-service-box-2:hover h3{
+    color: #fff;
+}

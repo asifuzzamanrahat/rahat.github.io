@@ -1,0 +1,304 @@
+
+/*==================
+*Home CSS
+  ==================*/
+
+.home-area-4{
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    color: #073b4c;
+}
+.home-area-4:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: #073b4c;
+    opacity: .25;
+    z-index: -1;
+}
+
+/*==================
+*Slide CSS
+  ==================*/
+
+.single-slide-item{
+    height: 100%;
+}
+.slide-item-wrapper{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+}
+.single-slide-item{
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+/*==================
+*Canvus menu CSS
+  ==================*/
+
+.off-canvus-menu{
+    position: absolute;
+    left: -300;
+    transition: .5s;
+    top: 0;
+    padding: 50px;
+    width: 300px;
+    z-index: 99;
+    color: black;
+    background: #fff;
+    opacity: 0;
+    text-align: left;
+    height: 100%;
+    visibility: hidden;
+}
+.off-canvus-menu.show-off-canvus-menu{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.off-canvus-menu-shade{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #073b4c;
+    z-index: 95;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.off-canvus-menu-shade.active{
+    opacity: .8;
+    visibility: visible;
+}
+.off-canvus-menu h2{
+    color: #000;
+    margin-top: 80%;
+}
+.off-canvus-menu a{
+    color: #000;
+}
+.menu-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #000;
+    padding: 30px;
+    cursor: pointer;
+}
+ul li{
+    padding: 10px;
+}
+ul li a:hover{
+    color: #06d6a0;
+}
+.menu-logo img {
+    margin-top: -15%;
+}
+.menu-trigger {
+    color:  #fff;
+    line-height:  50px;
+    padding: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+.search-trigger{
+    color:  #fff;
+    padding:  25px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/*==================
+*Gallery CSS
+  ==================*/
+
+
+.tile-gallery{
+    position: relative;
+    margin-top: 120px;
+    margin-bottom: 200px;
+    margin-right: 20px;
+}
+.tile-gallery img{
+    box-shadow: 0 0 5px #d1d1d1;
+}
+.absolute-image-1{
+    position: absolute;
+    left: 0;
+    top: 80px;
+}
+
+/*==================
+*Services CSS
+  ==================*/
+
+.service-box-2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 200px;
+}
+.service-box-2 img{
+    padding-bottom: 30px;
+}
+.service-section{
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+}
+.service-section:before{
+    background-image: url(img/penfon.jpg);
+}
+.service-section:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: #f4f4f4;
+    content: "";
+    z-index: -1;
+    box-shadow: 0 0 5px #f4f4f4;
+}
+.section-padding:before{
+    position: absolute;
+    right: 0;
+    top: -60px;
+    width: 50%;
+    height: 100%;
+    content: "";
+    background-size: cover;
+    background-position: center;
+}
+
+/*==================
+*cta area CSS
+  ==================*/
+
+.cta-area.theme-4{
+    background-image: url(img/cycle.jpg);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+}
+.cta-area.theme-4:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: .3;
+}
+.cta-area.theme-5{
+    position: relative;
+    z-index: 1;
+    background-image: url(img/people.jpg);
+    color: #fff;
+}
+.cta-area.theme-5 h2{
+    color: #fff;
+}
+.cta-area.theme-5:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #073b4c;
+    opacity: .6;
+}
+.shadow-img{
+    width: 100%;
+    height: 100%;
+}
+.pd-30{
+    padding: 30px;
+}
+
+/*==================
+*Feature CSS
+  ==================*/
+
+.single-feature-item{
+    margin-top: 50px;
+    position: relative;
+    padding-left: 80px;
+}
+.feature-icon{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 50px;
+    color: #06d6a0;
+}
+.test-content{
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+.test-content:after{
+    position: absolute;
+    left: 8px;
+    bottom: -15px;
+    width: 30px;
+    height: 30px;
+    background: #06d6a0;
+    content: "";
+    transform: rotate(45deg);
+    display: none;
+}
+.active .test-content:after{
+    display: block;
+}
+.test-bottom{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    opacity: 0;
+    visibility: hidden;
+}
+.active .test-bottom{
+    visibility: visible;
+    opacity: 1;
+}
+.test-bottom p{
+    display: inline-block;
+}
+.test-bottom img{
+    border-radius: 50%;
+    margin-top: -15px;
+    margin-right: 15px;
+}
+.quote-icon{
+    margin-bottom: 20px;
+    font-size: 120%;
+    
+}
+.active .test-content{
+    background-color: #06d6a0;
+    color: #fff;
+}
+
+/*==================
+*Footer CSS
+  ==================*/
+
+.footer-area{
+    background-color: #073b4c;
+}
